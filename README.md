@@ -6,8 +6,8 @@ Therefore, large-scale DL models are generally deployed in the cloud while end d
 To address these issues, DL applications tend to resort to edge computing. In fact, the use of optimization techniques, distributed DNNs and collaborative inference between IoT devices and the cloud becomes a promising solution.
 
 > ## Proposed Work:
-### 1. Proposed Architecture
-In order to reduce the computation time of DL inference, we add early exits branches at
+>### 1. Proposed Architecture
+>In order to reduce the computation time of DL inference, we add early exits branches at
 different stages of the network. Hence, this latter enable the inference to exit early from these
 additional branches based on a confidence criteria. For instance, as depicted in figure below, an
 edge device could give primary inference results at an early stage if the confidence criteria is
