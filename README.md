@@ -12,3 +12,7 @@ different stages of the network. Hence, this latter enable the inference to exit
 additional branches based on a confidence criteria. For instance, as depicted in figure below, an
 edge device could give primary inference results at an early stage if the confidence criteria is
 satisfied. Otherwise, further computation should take place on the cloud or on the edge server.
+![GitHub Logo](/images/distributed_cnn.png)
+>### 2. Distributed Model Inference
+>During inference, the predictions will be made by the earlier exits until the main branch (last exit point) is reached. As a result, the forecast will be returned by the last exit in the worst case. To deal with the communication between different nodes, we employ a distributed workflow to take charge of the message activity and the synchronization as depicted in figure below:
+![GitHub Logo](/images/communication_workflow.png)
